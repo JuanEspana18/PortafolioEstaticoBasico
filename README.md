@@ -68,4 +68,4 @@ Juan
 
 ## Nota final
 Si te gusta este proyecto, no olvides darle una estrella en GitHub.  
-![Estrella de GitHub](https://img.shields.io/badge/GitHub-%E2%AD%90%20Star-yellow?style=for-the-badge&logo=github)
+![Estrella de GitHub](https://img.shields.io/badge/GitHub-%E2%AD%90%20Star-yellow?style=for-the-badge&logo=github).
