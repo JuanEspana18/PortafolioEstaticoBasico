@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio — Desarrollador Web</title>
+  <meta name="description" content="Portafolio profesional — desarrollo web, proyectos y experiencia.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md sticky-top py-2">
+    <div class="container">
+      <a class="navbar-brand fw-semibold text-decoration-none d-inline-flex align-items-center gap-2" href="#inicio" style="color: var(--text);">
+        <span data-i18n="nav_brand">Juan | Software Developer</span>
+        <i class="bi bi-laptop" aria-hidden="true"></i>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+          <li class="nav-item"><a class="nav-link px-2" href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#sobre-mi" data-i18n="nav_sobre">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#experiencia" data-i18n="nav_exp">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#proyectos" data-i18n="nav_proy">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+          <li class="nav-item ms-md-2 d-flex gap-2 flex-wrap mt-2 mt-md-0">
+            <button type="button" class="btn btn-sm btn-lang active" id="lang-es" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" class="btn btn-sm btn-lang" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" class="btn btn-sm btn-theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+              <i class="bi bi-moon-fill" id="theme-toggle-icon" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-5 col-lg-4">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="assets/images/hero/JuanPicture.jpg" width="220" height="220" alt="Foto de perfil" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <p class="hero-greeting mb-0" data-i18n="hero_greeting">Hola, soy</p>
+          <h1 class="hero-title" data-i18n="hero_name">Tu Nombre</h1>
+          <p class="hero-lead" data-i18n="hero_lead">Desarrollador web enfocado en interfaces claras, código mantenible y productos que la gente disfruta usar.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-accent rounded-pill" href="#contacto" data-i18n="hero_cta_contact">Contactar</a>
+            <a
+              class="btn btn-outline-theme rounded-pill"
+              id="btn-cv"
+              href="assets/docs/HV.pdf"
+              download="HV.pdf"
+              data-i18n="hero_cta_cv"
+            >
+              Descargar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="contacto" class="container section-contact" aria-labelledby="contacto-heading">
+      <h2 id="contacto-heading" class="section-title" data-i18n="contact_title">Contacto</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin contact-icon" aria-hidden="true"></i>
+          <span data-i18n="contact_linkedin">LinkedIn</span>
+        </a>
+        <a class="contact-item" href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github contact-icon" aria-hidden="true"></i>
+          <span data-i18n="contact_github">GitHub</span>
+        </a>
+        <a class="contact-item contact-item-callgroup" href="https://api.whatsapp.com/send?phone=34600000000&text=Hola%20Juan%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte." target="_blank" rel="noopener noreferrer" aria-label="Abrir chat de WhatsApp">
+          <div class="contact-callgroup-icons">
+            <i class="bi bi-telephone contact-icon" aria-hidden="true"></i>
+            <i class="bi bi-whatsapp contact-icon" aria-hidden="true"></i>
+          </div>
+          <span class="contact-callgroup-label" data-i18n="contact_call_whatsapp">Llamadas / WhatsApp</span>
+        </a>
+        <a class="contact-item" href="mailto:correo@ejemplo.com">
+          <i class="bi bi-envelope contact-icon" aria-hidden="true"></i>
+          <span data-i18n="contact_email">correo@ejemplo.com</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="container">
+      <h2 class="section-title" data-i18n="about_title">Sobre mí</h2>
+      <p class="about-text mb-3" data-i18n="about_p1">Construyo experiencias web accesibles y rápidas. Combino buenas prácticas de front-end con una mentalidad orientada al usuario y al negocio.</p>
+      <p class="about-text mb-0" data-i18n="about_p2">Me interesa el trabajo en equipo, la revisión de código y seguir aprendiendo estándares modernos (HTML semántico, JS modular, diseño responsive).</p>
+    </section>
+
+    <section id="experiencia" class="container">
+      <h2 class="section-title" data-i18n="exp_title">Experiencia</h2>
+      <div class="row g-4 experience-cols">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column gap-4 experience-col-left">
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_1_role">Desarrollador Web Senior</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_1_meta">Empresa Tech · 2022 — Presente</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_1_li1">Mejoré el rendimiento de la SPA y el Core Web Vitals.</li>
+                <li data-i18n="exp_1_li2">Migré módulos a arquitectura basada en componentes.</li>
+                <li data-i18n="exp_1_li3">Mentoría a desarrolladores junior y revisiones de código.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_2_role">Desarrollador Full Stack</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_2_meta">Startup XYZ · 2019 — 2022</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_2_li1">Desarrollé APIs REST y documentación OpenAPI.</li>
+                <li data-i18n="exp_2_li2">Integré pasarelas de pago y paneles internos.</li>
+                <li data-i18n="exp_2_li3">Participé en despliegues en la nube y pipeline CI.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_3_role">Desarrollador Web</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_3_meta">Agencia Digital · 2017 — 2019</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_3_li1">Maqueté sitios corporativos responsive.</li>
+                <li data-i18n="exp_3_li2">Optimicé SEO on-page y accesibilidad básica.</li>
+                <li data-i18n="exp_3_li3">Trabajé con diseñadores en entregas pixel-perfect.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_4_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_4_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_4_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_4_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_4_li3">Tercer punto (opcional).</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex flex-column gap-4 experience-col-right">
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_5_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_5_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_5_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_5_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_5_li3">Tercer punto.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_6_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_6_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_6_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_6_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_6_li3">Tercer punto.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_7_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_7_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_7_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_7_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_7_li3">Tercer punto.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_8_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_8_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_8_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_8_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_8_li3">Tercer punto.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3 class="timeline-role mb-0" data-i18n="exp_9_role">Título del puesto</h3>
+              <p class="timeline-meta mb-2" data-i18n="exp_9_meta">Empresa · fechas</p>
+              <ul class="experience-duties list-unstyled mb-0">
+                <li data-i18n="exp_9_li1">Describe aquí un logro o responsabilidad.</li>
+                <li data-i18n="exp_9_li2">Otro punto relevante.</li>
+                <li data-i18n="exp_9_li3">Tercer punto.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="container section-skills" aria-labelledby="habilidades-heading">
+      <h2 id="habilidades-heading" class="section-title" data-i18n="skills_section_title">Habilidades</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+        <div class="col">
+          <div class="skills-card h-100">
+            <h3 class="skills-heading">
+              <i class="bi bi-hdd-stack skills-heading-icon" aria-hidden="true"></i>
+              <span data-i18n="skills_h_backend">Backend</span>
+            </h3>
+            <ul class="skills-list list-unstyled mb-0">
+              <li data-i18n="skills_be_1">Node.js · APIs REST</li>
+              <li data-i18n="skills_be_2">.NET / C#</li>
+              <li data-i18n="skills_be_3">Autenticación JWT</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skills-card h-100">
+            <h3 class="skills-heading">
+              <i class="bi bi-code-slash skills-heading-icon" aria-hidden="true"></i>
+              <span data-i18n="skills_h_frontend">Front-end</span>
+            </h3>
+            <ul class="skills-list list-unstyled mb-0">
+              <li data-i18n="skills_fe_1">HTML5 · CSS · JavaScript</li>
+              <li data-i18n="skills_fe_2">React · TypeScript</li>
+              <li data-i18n="skills_fe_3">Bootstrap · diseño responsive</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skills-card h-100">
+            <h3 class="skills-heading">
+              <i class="bi bi-database skills-heading-icon" aria-hidden="true"></i>
+              <span data-i18n="skills_h_sql">SQL</span>
+            </h3>
+            <ul class="skills-list list-unstyled mb-0">
+              <li data-i18n="skills_sql_1">T-SQL · PostgreSQL</li>
+              <li data-i18n="skills_sql_2">Diseño de esquemas</li>
+              <li data-i18n="skills_sql_3">Consultas y optimización</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skills-card h-100">
+            <h3 class="skills-heading">
+              <i class="bi bi-cloud-check skills-heading-icon" aria-hidden="true"></i>
+              <span data-i18n="skills_h_devops">DevOps</span>
+            </h3>
+            <ul class="skills-list list-unstyled mb-0">
+              <li data-i18n="skills_do_1">Docker · contenedores</li>
+              <li data-i18n="skills_do_2">CI/CD · GitHub Actions</li>
+              <li data-i18n="skills_do_3">Azure · despliegue en la nube</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skills-card h-100">
+            <h3 class="skills-heading">
+              <i class="bi bi-people-fill skills-heading-icon" aria-hidden="true"></i>
+              <span data-i18n="skills_h_soft">Metodología y colaboración</span>
+            </h3>
+            <ul class="skills-list list-unstyled mb-0">
+              <li data-i18n="skills_soft_1">Scrum · trabajo en equipo</li>
+              <li data-i18n="skills_soft_2">Comunicación con stakeholders</li>
+              <li data-i18n="skills_soft_3">Code review · pair programming</li>
+              <li data-i18n="skills_soft_4">Documentación técnica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="container pb-5">
+      <h2 class="section-title" data-i18n="proj_title">Proyectos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop" class="card-img-top" alt="" width="600" height="340" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                <span class="project-quick-label" data-i18n="proj_label_name">Nombre:</span>
+                <span data-i18n="proj_1_title">Dashboard Analytics</span>
+              </h3>
+              <p class="card-text small text-muted flex-grow-1">
+                <span class="project-quick-label" data-i18n="proj_label_short_desc">Descripción corta:</span>
+                <span data-i18n="proj_1_short_desc">Panel con métricas clave en tiempo real.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge rounded-pill badge-tech">React</span>
+                <span class="badge rounded-pill badge-tech">TypeScript</span>
+                <span class="badge rounded-pill badge-tech">D3</span>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent align-self-start rounded-pill" data-i18n="proj_btn_repo">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&h=340&fit=crop" class="card-img-top" alt="" width="600" height="340" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                <span class="project-quick-label" data-i18n="proj_label_name">Nombre:</span>
+                <span data-i18n="proj_2_title">API de comercio</span>
+              </h3>
+              <p class="card-text small text-muted flex-grow-1">
+                <span class="project-quick-label" data-i18n="proj_label_short_desc">Descripción corta:</span>
+                <span data-i18n="proj_2_short_desc">API segura para e-commerce con JWT.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge rounded-pill badge-tech">Node.js</span>
+                <span class="badge rounded-pill badge-tech">Express</span>
+                <span class="badge rounded-pill badge-tech">PostgreSQL</span>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent align-self-start rounded-pill" data-i18n="proj_btn_repo">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=340&fit=crop" class="card-img-top" alt="" width="600" height="340" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                <span class="project-quick-label" data-i18n="proj_label_name">Nombre:</span>
+                <span data-i18n="proj_3_title">Landing producto</span>
+              </h3>
+              <p class="card-text small text-muted flex-grow-1">
+                <span class="project-quick-label" data-i18n="proj_label_short_desc">Descripción corta:</span>
+                <span data-i18n="proj_3_short_desc">Landing optimizada para captar leads.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge rounded-pill badge-tech">HTML5</span>
+                <span class="badge rounded-pill badge-tech">Bootstrap 5</span>
+                <span class="badge rounded-pill badge-tech">JS</span>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent align-self-start rounded-pill" data-i18n="proj_btn_repo">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://github.com/tuusuario" class="btn btn-outline-theme rounded-pill px-4" id="github-more" target="_blank" rel="noopener noreferrer" data-i18n="proj_github_more">Más en GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bar">
+    <div class="container text-center">
+      <span data-i18n="footer_copy">© 2026 — Portafolio personal. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/Language/es.js"></script>
+  <script src="assets/Language/en.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
