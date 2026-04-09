@@ -1,19 +1,19 @@
-# Portafolio Web
+# Portfolio Web
 
-## Nombre del proyecto
+## 📌 Nombre del proyecto
 Portafolio Web
 
-## Descripción
+## 📝 Descripción
 Este proyecto es un portafolio personal desarrollado para presentar perfil profesional, experiencia, habilidades, proyectos y datos de contacto. Incluye soporte de idioma (español e inglés), cambio de tema y descarga de hoja de vida según el idioma seleccionado.
 
-## Tecnologías
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Bootstrap 5
-- Bootstrap Icons
+## 🛠️ Tecnologías
+- 🌐 HTML5
+- 🎨 CSS3
+- ⚙️ JavaScript (Vanilla JS)
+- 🧩 Bootstrap 5
+- 🔣 Bootstrap Icons
 
-## Instalación en local
+## 💻 Instalación en local
 1. Clona este repositorio:
    ```bash
    git clone <URL_DEL_REPOSITORIO>
@@ -23,7 +23,7 @@ Este proyecto es un portafolio personal desarrollado para presentar perfil profe
    cd PortafolioWeb
    ```
 
-## Correr el proyecto
+## ▶️ Correr el proyecto
 Como es un proyecto estático, puedes abrir `index.html` directamente en tu navegador.  
 Opcionalmente, puedes usar un servidor local para una mejor experiencia:
 
@@ -34,7 +34,7 @@ npx serve .
 
 Luego abre la URL local que te muestre la terminal.
 
-## Estructura del proyecto
+## 🗂️ Estructura del proyecto
 ```text
 PortafolioWeb/
 |- index.html
@@ -49,10 +49,10 @@ PortafolioWeb/
 |     |- CV.pdf
 ```
 
-## API (si va)
+## 🔌 API (si va)
 Actualmente este proyecto no consume una API externa.
 
-## Contribución
+## 🤝 Contribución
 Las contribuciones son bienvenidas.  
 Si deseas colaborar:
 1. Haz un fork del repositorio.
@@ -60,12 +60,12 @@ Si deseas colaborar:
 3. Realiza tus cambios y súbelos.
 4. Abre un Pull Request con una descripción clara.
 
-## Licencia
+## 📄 Licencia
 Este proyecto se distribuye bajo la licencia MIT.
 
-## Autor
+## 👤 Autor
 Juan
 
-## Nota final
+## ⭐ Nota final
 Si te gusta este proyecto, no olvides darle una estrella en GitHub.  
-![Estrella de GitHub](https://img.shields.io/badge/GitHub-%E2%AD%90%20Star-yellow?style=for-the-badge&logo=github).
+![⭐](https://img.shields.io/badge/GitHub-%E2%AD%90%20Star-yellow?style=for-the-badge&logo=github)
